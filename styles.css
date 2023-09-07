@@ -1,0 +1,49 @@
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
+  justify-content: space-between;
+  height: 80%;
+  border: 2px black solid;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+nav h1 {
+  text-align: center;
+  text-justify: center;
+}
+
+main {
+  width: 70%;
+  margin-left: 25%;
+  background-color: #f9f9f9;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: purple;
+}
+header {
+  font-family: sans-serif;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 2px black solid;
+}
+
+code {
+  font-family: 'courier', monospace;
+}
+
+@media (max-width: 720px) {
+  nav h1{
+    font-size: small;
+  }
+}
