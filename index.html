@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Chess - a brief Introduction</h1>
+      </header>
+      <a class="nav-link" href="#introduction">Introduction</a>
+      <a class="nav-link" href="#setting_up_play">Setting Up Play</a>
+      <a class="nav-link" href="#beginning_the_game">Beginning The Game</a>
+      <a class="nav-link" href="#the_play_cycle">The Play Cycle</a>
+      <a class="nav-link" href="#winning_or_losing_the_game">Winning or Losing the Game</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction
+        </header>
+        <p>Chess is a game of skill, with a rich history and thousands of years of play.  Learn it today to become a master!
+      </section>
+      <section class="main-section" id="setting_up_play">
+        <header>Setting up Play
+        </header>
+        <p>The chess board is where action happens.  The board is an eight by eight square, consisting of individual squares, alternating in black and white squares.</p>
+        <p>Each player has a set of 16 pieces, with 8 pawns, 2 bishops, 2 rooks, 2 knights, a queen and a king, in either all black or all white.  The pieces are set up with rooks on the outermost squares, then knights, then bishops, with the queen on the same colored square as the color of the player's pieces.  The board should be situated so that the player's color is also on the rightmost, nearest square.</p><p>Chess is a game of skill, with a rich history and thousands of years of play.  Learn it today to become a master!
+      </section>
+      <section class="main-section" id="beginning_the_game">
+        <header>Beginning the Game
+        </header>
+        <p>The opening is the sequence of moves that begins each game.  Each opening is defined by the style of play that predominates in it, and by characteristic points of attack.  Some of the most popular openings include:</p>
+        <ul>
+          <li>The London System</li>
+          <li>The Ruy Lopez</li>
+          <li>The Dutch Defense</li>
+          <li>The Jobava London</li>
+          <li>The Vienna Game</li>
+        </ul>
+        <p>Openings are typically categorized by the first move that begins the game, either 1.D4 or 1.E4. Sequences beginning with other first moves, like 1.C4 or 1.NF4, happen in less than 20% of all games.</p>
+      </section>
+      <section class="main-section" id="the_play_cycle">
+        <header>The Play Cycle
+        </header>
+        <p>Each player makes a move, one after the other.  If a player moves onto an opponent's piece which already occupies the square, it 'captures' that piece.  This is a critical concept, as pieces are 'defended' by pieces of lesser value, which ensures that any trades will be for a greater or equally valued piece.</p>
+        <p>Check is an important concept, as well: if a player moves a piece in such a way that on their next turn they could theoretically 'capture' the opponent's king, then the king is said to be in 'check.'  In this case, the only legal moves are to either move the king out of check, or to interpose another piece in between to block the check.</p>
+        <p>Double check is a unique situation when the king is simultaneously checked by two pieces.  In this case, the king MUST move out of these checks.</p>
+        <p>It could be fun to make a bot to play the game for you.  How could we establish the variables of this game?</p>
+        <code>int[,] blkQueen = new int[1,1];<br></code>
+        <code>blkQueen = [8,4];</code><br>
+        <code>int[,] whtQueen = new int[1,1];</code><br>
+        <code>whtQueen = [1,4];</code><br>
+        <code>for (int i=0; i<8; i++)</code><br>
+        <code>pawn[i] = [i+1,2];</code><br>
+      </section>
+      <section class="main-section" id="winning_or_losing_the_game">
+        <header>Winning or Losing the Game
+        </header>
+        <p>Eventually, a check will happen which cannot be moved out of or blocked, and this is called 'Checkmate'.  The player who is checkmating wins the game!</p>
+        <p>Most games at a higher level actually end in a draw, which is either by agreement, or when the same position is reached after three moves.  There is also a unique ending called 'Stalemate' in which the player whose turn it is has no legal moves, because the player's king is blocked from its normal moves by the checks of opposing players.  In this case, the player whose king cannot move (and probably would soon be losing!) has drawn the game!</p>
+      </section>
+    </main>
+  </body>
+</html>
